@@ -151,6 +151,9 @@
     gap: 10px;
     @include font(12px, 1.16, 0.02em, 500);
     color: var(--additional-text);
+    @media (min-width:1200px) {
+      gap: 30px
+    }
   }
 
   .contact-header__link {

@@ -638,6 +638,13 @@ img {
     letter-spacing: 0.02em;
     color: var(--additional-text);
   }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .contact-header__list {
+    gap: 30px;
+  }
+}
+@media (min-width: 768px) {
   .contact-header__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -647,15 +654,21 @@ img {
             align-items: center;
     color: var(--additional-text);
   }
+}
+@media (min-width: 768px) {
   .contact-header__icon {
     margin-right: 10px;
     fill: currentColor;
   }
+}
+@media (min-width: 768px) {
   .mob-btn-open,
 .mob-btn-close,
 .mob-soc {
     display: none;
   }
+}
+@media (min-width: 768px) {
   .mob-nav__link {
     color: var(--main-text-color);
   }
