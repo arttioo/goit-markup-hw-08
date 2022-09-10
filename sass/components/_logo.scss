@@ -1,0 +1,30 @@
+.logo-web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include font (26px, 1.19, 0.03em, 700);
+  color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo-studio {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include font (26px, 1.19, 0.03em, 700);
+  color: var(--black);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer__logo-web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include font (26px, 1.19, 0.03em, 700);
+  color: var(--accent-color);
+}
+
+.footer__logo-studio {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include font (26px, 1.19, 0.03em, 700);
+  color: var(--white);
+}
