@@ -549,8 +549,7 @@ img {
 }
 .menu-container .mob-soc__item {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
-  padding-left: 10px;
-  margin-left: 10px;
+  padding: 0 10px;
 }
 .menu-container .mob-soc__item:first-child {
   border-left: none;
@@ -640,6 +639,12 @@ img {
     color: var(--additional-text);
   }
   .contact-header__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: var(--additional-text);
   }
   .contact-header__icon {

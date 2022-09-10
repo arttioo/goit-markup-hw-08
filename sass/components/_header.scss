@@ -86,8 +86,7 @@
   }
     .mob-soc__item {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 10px;
-    margin-left: 10px;
+    padding:0 10px;
     &:first-child {
     border-left: none;
     padding-left: 0;
@@ -155,6 +154,8 @@
   }
 
   .contact-header__link {
+    display: flex;
+    align-items: center;
     color: var(--additional-text);
   }
   .contact-header__icon {
