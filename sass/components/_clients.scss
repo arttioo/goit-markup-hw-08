@@ -1,19 +1,10 @@
 .clients {
   @media (max-width:1199px) {
-  padding-top: 60px;
-  padding-bottom: 60px;
+    padding: 60px 0;
   }
   @media (min-width:1200px) {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  }
-}
-
-.clients__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+    padding: 94px 0;
+ }
 }
 
 .clients-title {
@@ -29,12 +20,23 @@
   }
 }
 
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients__item {
+  flex-basis: 170px;
+  flex-grow: 1;
+}
 .clients__link {
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   @include centeredFlex;
+  
   color: #afb1b8;
 
   transition-property:color, border;

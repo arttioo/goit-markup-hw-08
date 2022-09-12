@@ -32,10 +32,13 @@
   font-style: normal;
 }
 
-
 .address__list {
+  @media (max-width:1199px) {
+   margin-bottom: 60px;  
+  }
+  @media (min-width: 1200px) {
   margin-top: 20px;
-  margin-bottom: 60px;
+  }
 }
 
 .address__location {
@@ -115,6 +118,7 @@
 }
 
 .form-submit__input {
+  padding-left: 16px;
   @media (max-width: 767px) {
     width: 100%;
   }
