@@ -36,7 +36,7 @@
 .menu-container {
   @media (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: left;
@@ -83,8 +83,9 @@
     @include font(24px, 1.16, 0.02em, 500);
     color: var(--additional-text);
   }
-  .mob-soc {
+  .mob-soc-list {
     display: flex;
+    flex-wrap: wrap;
     @include font(18px, 1.22, 0.02em, 500);
     color: var(--accent-color);
 

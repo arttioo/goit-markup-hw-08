@@ -1,27 +1,27 @@
 .portfolio {
-  @media (max-width: 1199px){
-    padding:60px 0;}
-    @media (min-width: 1200px){
-    padding:94px 0;}
+  @media (max-width: 1199px) {
+    padding: 60px 0;
+  }
+  @media (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-filter {
-  @media (max-width: 767px){
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
     margin-bottom: 32px;
   }
-@media (min-width: 768px){
-    display: flex;
+  @media (min-width: 768px) {
     justify-content: center;
-    flex-wrap: wrap;
     margin-bottom: 40px;
   }
 }
 
 .portfolio-filter__item {
   margin-right: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 
   .current-btn {
     color: var(--white);
@@ -55,38 +55,19 @@
 }
 
 .portfolio__list {
-  @media (max-width: 767px) {
-    display: block;
-  }
-  @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap; 
-    margin: -15px; 
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio__item {
-  @media (max-width: 767px) {
-    margin-bottom: 30px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  @media (min-width: 768px) {
-    width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
-  @media (min-width: 1200px) {
-    width: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
-    
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  flex-basis: 354px;
+  flex-grow: 1;
 }
 
 .portfolio__link {
   display: block;
-
+  height: 100%;
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -95,6 +76,10 @@
   &:focus .portfolio-text {
     opacity: 1;
     transform: translateY(0);
+  }
+  @media (min-width:768px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -127,22 +112,15 @@
   padding-right: 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .portfolio-card__name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font (18px, 2, 0.06em, 700);
   color: var(--main-text-color);
 }
 
 .portfolio-card__type {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  @include font (16px, 1.87, 0.03em);
   color: var(--additional-text);
 }
-
-

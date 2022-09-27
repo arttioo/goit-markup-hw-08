@@ -1,12 +1,12 @@
 .feature {
-  @media (max-width:1199px) {
+  @media (max-width: 1199px) {
     padding: 60px 0;
-  } 
-  @media (min-width:1200px) {
+  }
+  @media (min-width: 1200px) {
     padding: 94px 0;
-  } 
+  }
 }
-  
+
 .feature__content {
   @include font(14px, 1.71, 0.03em);
   color: var(--additional-text);
@@ -32,16 +32,17 @@
 }
 
 .feature__title {
-  @media (min-width: 480px) {
+  @media (max-width: 767px) {
     @include font(14px, 1.14, 0.03em, 700);
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
   }
-}
-
-.feature__title {
   @media (min-width: 768px) {
+    @include font(14px, 1.14, 0.03em, 700);
+    text-transform: uppercase;
+    margin-bottom: 10px;
     text-align: left;
   }
 }
+

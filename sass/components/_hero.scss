@@ -1,6 +1,4 @@
 .hero {
-  
-  @media (max-width:480px), (max-width:767px) {
   max-width: 100%;
   margin: 0 auto;
   background-image: url(../images/overlay_mob.png), url(../images/hero_img_mob.jpg);
@@ -11,27 +9,53 @@
   padding-bottom: 118px;
   margin-bottom: 60px;
   height: auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/overlay_mob.png), url(../images/hero_img_mob_2x.jpg);
   }
-  @media (min-width:768px) and (max-width:1199px) {
-  max-width: 100%;
+  
+  @media (min-width:480px) {
+  max-width: 480px;
   margin: 0 auto;
-  background-image: url(../images/overlay_tab.png), url(../images/hero_img_tab.jpg);
+  background-image: url(../images/overlay_mob.png), url(../images/hero_img_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   height: auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/overlay_mob.png), url(../images/hero_img_mob_2x.jpg);
+    }
   }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    margin: 0 auto;
+    background-image: url(../images/overlay_tab.png), url(../images/hero_img_tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/overlay_tab.png), url(../images/hero_img_tab_2x.jpg);
+    }
+  }
+
   @media (min-width: 1200px) {
-  max-width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   background-image: url(../images/Overlay.png), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/Overlay.png), url(../images/hero_2x.jpg);
+    }
   }
 }
 
@@ -61,4 +85,5 @@
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
+}
 }
