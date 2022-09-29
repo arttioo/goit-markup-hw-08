@@ -1262,9 +1262,11 @@ img {
   gap: 30px;
 }
 
-.portfolio__item {
-  -ms-flex-preferred-size: 354px;
-      flex-basis: 354px;
+@media (min-width: 768px) and (max-width: 1200px) {
+  .portfolio__item {
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
+  }
 }
 
 .portfolio__link {

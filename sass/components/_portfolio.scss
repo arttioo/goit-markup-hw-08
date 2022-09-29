@@ -65,9 +65,11 @@
 }
 
 .portfolio__item {
-  flex-basis: 354px;
-  // flex-grow: 1;
-}
+  @media (min-width:768px) and (max-width:1200px) {
+    flex-basis: 354px;
+  }
+    }
+  // flex-grow: 1;}
 
 .portfolio__link {
   display: block;
