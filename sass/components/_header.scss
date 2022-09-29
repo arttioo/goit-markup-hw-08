@@ -161,6 +161,7 @@
     color: var(--additional-text);
     @media (min-width: 1200px) {
       gap: 30px;
+      @include font(14px, 1.14, 0.02em, 500);
     }
   }
 

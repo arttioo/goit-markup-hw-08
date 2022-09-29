@@ -11,11 +11,15 @@
   display: flex;
   flex-wrap: wrap;
   @media (max-width: 767px) {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
   }
   @media (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -62,7 +66,7 @@
 
 .portfolio__item {
   flex-basis: 354px;
-  flex-grow: 1;
+  // flex-grow: 1;
 }
 
 .portfolio__link {
